@@ -74,44 +74,33 @@
 
             <form action="https://httpbin.org/get" method="get">
                 <fieldset>
-                    <legend>personal Info</legend>
-                    <p> <label for="firstName">First Name</label>
+                <legend>personal Info</legend>
+                    <p>
+                        <label for="firstName">First Name</label>
                         <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
                             autofocus>
                     </p>
-            </form>
-
-
-            <form action="https://httpbin.org/get" method="get">
                 <p>
                     <label for="lastName">lastName</label>
                     <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
                 </p>
-            </form>
-
-
-
-
-            <form action="https://httpbin.org/get" method="get">
                 <p>
                     <label for="password">password</label>
                     <input type="password" name="password" id="password" placeholder="Password" autocomplete="on"
                         required>
                 </p>
-            </form>
-            <form>
                 <p>
                     <label for="phone">phone</label>
                     <input type="tel" name="phone" id="phone" placeholder="5555555555" autocomplete="on"
-                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
                 </p>
                 <p>
                     <label for="decade">favorite decade</label>
                     <input type="number" name="decade" id="decade" min="1950" max="2025" step="10" value="1980">
                 </p>
-                <p>
+                
                     <label for="coffee">favorite coffee</label>
-                    <select name="coffee" id="coffee" mutiple size="5">
+                    <select name="coffee" id="coffee" multiple size="5">
                         <optgroup label="Coffees">
                             <option value="regular coffee">Reg Coffee</option>
                             <option value="iced coffee" selected>Iced Coffee</option>
@@ -119,10 +108,9 @@
                             <option value="iced coffee" selected>Iced Coffee</option>
                             <option value="iced coffee" selected>Iced Coffee</option>
                         </optgroup>
-                        <option value="moca">Moca</option>
-
+                        <option value="moca">Moca</option>             
                     </select>
-                </p>
+                </fieldset>
                 <!-- <p>
                 <label for="coffee">favorite coffee</label>
                 <input type="text" name="coffee" id="coffee" list="coffee-list"
@@ -139,7 +127,7 @@
                 
                 </select>
             </p> -->
-                </fieldset>
+
                 <br>
                 <fieldset>
                     <legend>
@@ -187,6 +175,7 @@
                 </fieldset>
                 <br>
                 <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit to bin</button>
                 <button type="reset">Reset</button>
             </form>
 
