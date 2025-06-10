@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,191 @@
     <link rel="icon" href="./icons8-website-94.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <section id="world">
-    <h1> Hello world</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#world">hello world</a></li>
-               <li> <a href="#Learn">Learn</a></li>
-               <li> <a href="#daily">Daily</a></li>
-            
-            
-        </ul>
-    </nav>
+        <h1>Hello world</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#world">hello world</a>
+                </li>
+                <li><a href="#Learn">Learn</a></li>
+                <li><a href="#daily">Daily</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
 
+        <hr>
+        <section id="Learn">
+            <h2>ready to learn</h2>
+            <p>
+                this is my <br>web page <br>resource from
+                <abbr title="mozilla developer network">
+                    <a href="https://github.com/RobertGleim/Lesson/settings/pages">
+                        MDN</a>
+                </abbr>
+            </p>
+        </section>
+        <h3><em>my daily schedule</em></h3>
+        <p>my training section</p>
+    </section>
     <hr>
-    <section id="Learn">
-    <h2> ready to learn</h2>
-   <p>this is my 
-    <br>web page
-    <br>resource from <abbr title="mozilla developer network">
-       <a href="https://github.com/RobertGleim/Lesson/settings/pages"> MDN</a>
-    </abbr>
-</p>
-</section>
-    <h3> <em>my daily schedule</em></h3>
-   <p>my training section</p>
-</section>
-   <hr>
 
-   <h2> Leady to <strong>Learn</strong></h2>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp; this is my <strong> page</strong></p>
-<section id="daily">
-    <h3> my daily schedule</h3>
+    <h2>Leady to <strong>Learn</strong></h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; this is my <strong> page</strong></p>
+    <section id="daily">
+        <h3>my daily schedule</h3>
 
-    <dl>
-        <dt>Temple</dt>
-        <dd>north of killeen</dd>
-        <dd>close to waco</dd>
-        <dt>killen</dt>
-        <dd>south of temple</dd>
-        <dd>futher away from waco</dd>
-    </dl>
-   <p>my training section</p>
-</section>
+        <dl>
+            <dt>Temple</dt>
+            <dd>north of killeen</dd>
+            <dd>close to waco</dd>
+            <dt>killen</dt>
+            <dd>south of temple</dd>
+            <dd>futher away from waco</dd>
+        </dl>
+        <p>my training section</p>
+    </section>
 
-   <address>2551 wilson art drive<br>
-    Temple, Texas <br>
-    76504
-</address>
-   
+    <address>
+        2551 wilson art drive<br>
+        Temple, Texas <br>
+        76504
+    </address>
 
-   <!--public can see this comment -->
-   <hr>
-   <footer>
-   &lt;&lt;&lt;&copy;<a href="about.html">About me Robert Gleim</a> &gt;&gt;&gt;
-   <a href="#">back to top</a>
-</footer>
+    <!--public can see this comment -->
+    <hr>
+    <footer>
+        &lt;&lt;&lt;&copy;<a href="about.html">About me Robert Gleim</a>
+        &gt;&gt;&gt;
+        <a href="#">back to top</a>
+        <hr>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>i really want to hear from you</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>personal Info</legend>
+                    <p> <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
+                            autofocus>
+                    </p>
+            </form>
+
+
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="lastName">lastName</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                </p>
+            </form>
+
+
+
+
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="on"
+                        required>
+                </p>
+            </form>
+            <form>
+                <p>
+                    <label for="phone">phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555" autocomplete="on"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
+                </p>
+                <p>
+                    <label for="decade">favorite decade</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2025" step="10" value="1980">
+                </p>
+                <p>
+                    <label for="coffee">favorite coffee</label>
+                    <select name="coffee" id="coffee" mutiple size="5">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Reg Coffee</option>
+                            <option value="iced coffee" selected>Iced Coffee</option>
+                            <option value="iced coffee" selected>Iced Coffee</option>
+                            <option value="iced coffee" selected>Iced Coffee</option>
+                            <option value="iced coffee" selected>Iced Coffee</option>
+                        </optgroup>
+                        <option value="moca">Moca</option>
+
+                    </select>
+                </p>
+                <!-- <p>
+                <label for="coffee">favorite coffee</label>
+                <input type="text" name="coffee" id="coffee" list="coffee-list"
+                >
+                    <datalist id="coffee-list">
+                    <option value="regular coffee">Reg Coffee</option>
+                    <option value="iced coffee" selected>Iced Coffee</option>
+                    <option value="iced coffee" selected>Iced Coffee</option>
+                    <option value="iced coffee" selected>Iced Coffee</option>
+                    <option value="iced coffee" selected>Iced Coffee</option>
+                    </optgroup>
+                    <option value="moca">Moca</option>
+                    </datalist>
+                
+                </select>
+            </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        what is your favorite food
+                    </legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="burgers" value="burgers">
+                        <label for="burgers">Burgers</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you have pets</legend>
+                    <p>
+                        <input type="checkbox" name="pet" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="otherpet" value="otherpet">
+                        <label for="otherpet">other-pet</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+
+                    <legend>Send Me a Note </legend>
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message" rows="5" cols="50" placeholder="your note to me"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+
+
+        </article>
+    </footer>
 </body>
+
 </html>
